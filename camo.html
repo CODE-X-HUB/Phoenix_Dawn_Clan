@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camo & Loadout Flex</title>
+  <style>
+    :root {
+      --orange: #ff6a00;
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --grey: #f3f4f6;
+      --muted: #8a8a8a;
+      --radius: 14px;
+      --transition: 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 950px;
+      background: #1a1a1a;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--orange), #ff8b3a);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 35px;
+      box-shadow: 0 6px 20px rgba(255, 106, 0, 0.25);
+      transition: transform var(--transition);
+    }
+
+    .icon:hover {
+      transform: translateY(-5px) rotate(-5deg);
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--black);
+      color: var(--white);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    .achievements {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .item {
+      background: rgb(209, 209, 209);
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: var(--radius);
+      padding: 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .num {
+      background: rgba(0,0,0,0.06);
+      color: var(--black);
+      min-width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .content h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: var(--black);
+    }
+
+    .content p {
+      font-size: 14px;
+      color: var(--black);
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 20px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="icon">🎯</div>
+      <div>
+        <h1>Camo & Loadout Flex</h1>
+        <p>Showcasing top-tier weapon mastery, skin collection, and creative loadouts that define the clan’s identity.</p>
+        <div class="badge">Weapon Mastery Showcase</div>
+      </div>
+    </header>
+
+    <div class="achievements">
+      <div class="item">
+        <div class="num">1</div>
+        <div class="content">
+          <h3>Multiple Diamond Camos</h3>
+          <p>Members unlocking diamond camos for several guns proving skill, patience, and dedication to the grind.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="num">2</div>
+        <div class="content">
+          <h3>Mastery Skins (Gold / Platinum / Damascus)</h3>
+          <p>A clan-wide showcase of mastery skins, each member contributing to the full collection of high-tier weapon grinds.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="num">3</div>
+        <div class="content">
+          <h3>Mythic & Legendary Weapons Collection</h3>
+          <p>Clan members owning multiple mythic or full legendary loadouts, demonstrating elite flex and visual presence in every match.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="num">4</div>
+        <div class="content">
+          <h3>Custom Clan Loadout Theme</h3>
+          <p>A unique weapon + operator + calling card setup that symbolizes the clan’s identity — creative, cohesive, and instantly recognizable.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 <span class="muted-sm">PHOENIX DAWN CLAN</span>. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

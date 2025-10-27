@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PHOENIX DAWN CLAN</title>
+        <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.95rem 2.5rem;
+            border-bottom: 2px solid orangered;
+        }
+
+        header img {
+            width: 6.5%;
+            height: auto;
+            border-radius: 10%;
+            border: 1px solid gray;
+        }
+
+        nav{
+            display: flex;
+            padding: 10px 20px;
+        }
+
+        nav a{
+            background: black;
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            color: orangered;
+        }   
+
+        h2{
+                text-align: center;
+                padding: 10px;
+                margin: 80px;
+                margin-bottom: 10px;
+            }
+
+        .gallery{
+                margin-top: 80px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                gap: 15px;
+                justify-items: center;
+                margin-bottom: 80px;
+            }
+
+            .gallery img{
+                width: 70%;
+                height: auto;
+                border-radius: 8px;
+                transition: 0.3s;
+            }
+
+            .gallery img:hover{
+                transform: scale(1.05);
+            }
+
+            .vid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 35px;
+                justify-items: center;
+            }
+
+            .videobox{
+                text-align: center;
+            }
+
+            .videobox p{
+                color: white;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .vid video{
+                width: 80%;
+                height: auto;
+                border-radius: 10px;
+                transition: 0.3s;
+                border: 2px solid orangered;
+            }
+
+            .vid video:hover{
+                transform: scale(1.05);
+            }
+
+            .down{
+                background-color: #0d0d0d;
+                color: white;
+                text-align: center;
+                padding: 10px 10px;
+                font-family: 'poppins', sans-serif;
+                border-top: 2px solid orangered;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="LOGO/clan1.jpg">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="team.html">TEAM</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        </header>
+
+        <section class="galleryhead">
+            <h2>GALLERY</h2>
+                <div class="vid">
+                    <div class="videobox">
+                    <video controls><source src="IMG_VIDEO/codmvideo1.mp4" type="video/MP4"></video>
+                    <p><strong>High IQ Gameplay?</strong></p>
+                    </div>
+
+                    <div class="videobox">
+                    <video controls><source src="IMG_VIDEO/codmvideo2.mp4" type="video/MP4"></video>
+                    <p><strong>Crashout Moment</strong></p>
+                    </div>
+
+                    <div class="videobox">
+                    <video controls><source src="IMG_VIDEO/codmvideo4.mp4" type="video/MP4"></video>
+                    <p><strong>Geometry Master</strong></p>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <img src="STATS/stats3.jpg">
+                    <img src="STATS/stats21.jpg">
+                    <img src="STATS/stats20.jpg">
+                    <img src="STATS/stats17.jpg">
+                    <img src="STATS/stats15.jpg">
+                    <img src="STATS/stats19.jpg">
+                    <img src="STATS/stats5.jpg">
+                    <img src="STATS/stats12.jpg">
+                    <img src="STATS/stats23.jpg">
+                </div>
+        </section>
+
+        <footer class="down">
+            <p>&copy; 2025 <span>PHOENIX DAWN CLAN</span>. All rights reserved.</p>
+        </footer>
+         
+    </body>
+</html>
