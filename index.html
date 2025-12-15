@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PHOENIX DAWN CLAN</title>
+        <style>
+
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+                color: white;
+            }
+            @keyframes headFader{
+                0%,100%{background-image: url(IMG_VIDEO/codwall17.jpg);}
+                20%{background-image: url(IMG_VIDEO/codwall19.jpg);}
+                40%{background-image: url(IMG_VIDEO/codwall12.jpg);}
+                60%{background-image: url(IMG_VIDEO/codwall20.jpg);}
+                80%{background-image: url(IMG_VIDEO/codwall21.jpg);}
+            }
+
+            header {
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.95rem 2.5rem;
+                border-bottom: 2px solid orangered;
+            }
+
+            header img {
+                width: 6.5%;
+                height: auto;
+                border-radius: 10%;
+                border: 1px solid gray;
+            }
+
+            nav{
+                display: flex;
+                padding: 10px 20px;
+            }
+
+            nav a{
+                background: black;
+                color: white;
+                margin-left: 20px;
+                text-decoration: none;
+            }
+
+            nav a:hover{
+                color: orangered;
+            }
+
+            .hero{
+                height: 6vh;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                background-position: center top;
+                position: relative;
+                padding: 43.75vh;
+                animation: headFader 33s infinite;
+                background: no-repeat center center/cover;
+                background-size: cover;
+            }
+
+            .hero>*{
+                position: absolute;
+                z-index: 1000;
+            }
+
+            .hero:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(skyblue, rgba(255, 255,255 10)white);
+                z-index: 500;
+                opacity: 33;
+            }
+
+            .hero h1{
+                font-size: 3rem;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 0.625rem;
+                border-radius: 10px;
+            }
+
+            #squad{
+                text-align: center;
+                margin-top: 3.125rem;
+            }
+
+            .content{
+                padding: 3.125rem 1.875rem;
+                gap: 1.25rem;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #squad{
+                text-align: center;
+                margin: 0.625rem;
+            }
+
+            .team{
+                background: #1a1a1a;
+                padding: 20px;
+                border-radius: 15px;
+                text-align: center;
+                border: 2px solid orangered;
+                transition: 0.3s;
+            }
+
+            .team:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 0 15px orangered;
+            }
+
+            .team img{
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 100px;
+            }
+
+            .team h3{
+                margin-bottom: 10px;
+            }
+
+            .team h4{
+                margin-bottom: 10px;
+            }
+
+            .view{
+                text-align: center;
+                margin-top: -25px;
+            }
+
+            .view a{
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .view a:hover{
+                color: orangered;
+            }
+
+            h2{
+                text-align: center;
+                padding: 10px;
+                margin: 80px;
+                margin-bottom: 10px;
+            }
+
+            .achievements ul{
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 25px;
+                text-align: center;
+                list-style: none;
+                max-width: 350px;
+                margin: auto;
+                box-shadow: 0 0 8px orangered;
+            }
+
+            .achievements li{
+                padding: 15px 50px;
+                color: #ccc;
+                background: #ff4500;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+
+            .achievements a{
+                text-decoration: none;
+                background-color: #ff4500;
+                color: white;
+                padding: 6px 14px;
+                border-radius: 8px;
+                transition: 0.3s;
+            }
+
+            .achievements a:hover{
+                color: black;
+                background-color: #cc3802;
+            }
+
+            .gallery{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+                margin-bottom: 80px;
+            }
+
+            .gallery img{
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: 0.3s;
+            }
+
+            .gallery img:hover{
+                transform: scale(1.05);
+            }
+
+            .down{
+                background-color: #0d0d0d;
+                color: white;
+                text-align: center;
+                padding: 10px 10px;
+                font-family: 'poppins', sans-serif;
+                border-top: 2px solid orangered;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <img src="LOGO/clan1.jpg">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="team.html">TEAM</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        </header>
+
+        <section class="hero">
+            <h1>PHOENIX DAWN</h1>
+        </section>
+
+        <div id="squad">
+            <h2>MEET OUR SQUAD</h2>
+        </div>
+
+        <section class="content">
+            <div class="team">
+                <img src="LOGO/skullzlogo.jpg">
+                <h4>ঔৣ.§kùĺłج</h4>
+                <P>Tactical User</P>
+            </div>
+
+            <div class="team">
+            <img src="LOGO/cartellogo.jpg">
+            <h4>ঔৣGp_Cãrtêl</h4>
+            <p>Frontline user •</p>
+            </div>
+
+            <div class="team">
+                <img src="LOGO/mrpelneezlogo.jpg">
+                <h4>ঔৣMr_Pelneez</h4>
+                <P>Tactical User</P>
+            </div>
+
+            <div class="team">
+            <img src="LOGO/logo2.jpg">
+            <h4>ঔৣCODE~X</h4>
+            <p>Frontline user •</p>
+            </div>
+        </section>
+
+        <div class="view">
+                <a href="team.html">View More Members</a>
+            </div>
+
+        <section>
+            <div class="achievements">
+                <h2>ACHIEVEMENTS</h2>
+                <ul>
+                    <li><strong><a href="tournament.html">COMPETITIONS</a></strong></li>
+                    <li><strong><a href="ranked.html">RANKED</a></strong></li>
+                    <li><strong><a href="camo.html">CAMO/LOADOUT FLEX</a></strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="galleryhead">
+            <h2>GALLERY</h2>
+                <div class="gallery">
+                    <img src="IMG_VIDEO/codwall.jpg">
+                    <img src="IMG_VIDEO/codwall12.jpg">
+                    <img src="IMG_VIDEO/codwall13.jpg">
+                    <img src="IMG_VIDEO/codwall14.jpg">
+                    <img src="IMG_VIDEO/codwall16.jpg">
+                    <img src="IMG_VIDEO/codwall17.jpg">
+                    <img src="IMG_VIDEO/codwall18.jpg">
+                    <img src="IMG_VIDEO/codwall19.jpg">
+                    <img src="IMG_VIDEO/codwall2.jpg">
+                    <img src="IMG_VIDEO/codwall20.jpg">
+                </div>
+        </section>
+
+        <footer class="down">
+            <p>&copy; 2025 <span>PHOENIX DAWN CLAN</span>. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>

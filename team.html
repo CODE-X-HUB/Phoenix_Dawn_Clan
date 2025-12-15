@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PHOENIX DAWN CLAN</title>
+        <style>
+
+            body {
+              background-color: black;
+              color: white;
+              font-family: 'Poppins', sans-serif;
+              margin: 0;
+              padding: 0;
+            }
+
+            header {
+              background-color: black;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0.95rem 2.5rem;
+              border-bottom: 2px solid orangered;
+            }
+
+            header img {
+              width: 6.5%;
+              height: auto;
+              border-radius: 10%;
+              border: 1px solid gray;
+            }
+
+            nav{
+              display: flex;
+              padding: 10px 20px;
+            }
+
+            nav a{
+              background: black;
+              color: white;
+              margin-left: 20px;
+              text-decoration: none;
+            }
+
+            nav a:hover{
+              color: orangered;
+            }
+
+            .teamsection {
+              text-align: center;
+              padding: 40px 20px;
+            }
+
+            .teamsection h2 {
+              color: white;
+              font-size: 30px;
+              margin-bottom: 40px;
+              text-shadow: 0 0 2px orangered;
+            }
+
+            .teamcontainer {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 25px;
+              justify-items: center;
+            }
+
+            .playercard {
+              background: #1a1a1a;
+              border: 2px solid orangered;
+              border-radius: 15px;
+              width: 250px;
+              text-align: center;
+              padding: 20px;
+              position: relative;
+              overflow: hidden;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .playercard:hover {
+              transform: scale(1.05);
+              box-shadow: 0 0 15px orangered;
+            }
+
+            .playercard img {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .playercard h3 {
+              margin: 10px 0 5px;
+              font-size: 18px;
+            }
+
+            .playercard p {
+              font-size: 14px;
+              color: white;
+            }
+
+            .stats {
+              position: absolute;
+              top: 0;
+              right: -100%;
+              height: 100%;
+              width: 100%;
+              background: rgba(10, 10, 10, 0.95);
+              border-left: 2px solid orangered;
+              border-radius: 15px;
+              padding: 20px;
+              box-sizing: border-box;
+              text-align: left;
+              transition: right 0.3s ease;
+            }
+
+            .playercard:hover .stats {
+              right: 0;
+            }
+
+            .stats h4 {
+              color: orangered;
+              margin-bottom: 10px;
+            }
+
+            .stats p {
+              color: #fff;
+              margin: 8px 0;
+              font-size: 13px;
+            }
+
+            .stats strong {
+              color: orangered;
+            }
+
+            #rolecolor{
+              color: orangered;
+            }
+
+            .down{
+              background-color: #0d0d0d;
+              color: white;
+              text-align: center;
+              padding: 10px 10px;
+              font-family: 'poppins', sans-serif;
+              border-top: 2px solid orangered;
+            }
+
+        </style>
+            </head>
+            <body>
+
+                <header>
+                    <img src="LOGO/clan1.jpg">
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="team.html">TEAM</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+                </header>
+
+              <section class="teamsection">
+                <h2>CLAN MEMEBERS</h2>
+                <div class="teamcontainer">
+            
+                  <div class="playercard">
+                    <img src="LOGO/skullzlogo.jpg" alt="Skulz">
+                    <h3>ঔৣ.§kùĺłج</h3>
+                    <p id="rolecolor"><strong>SMG USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>2x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 7 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/cartellogo.jpg" alt="Gp_Cartel">
+                    <h3>ঔৣGp_Cãrtêl</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>4x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 7 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/mrpelneezlogo.jpg" alt="Mr_Pelneez">
+                    <h3>ঔৣMr_Pelneez</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • SHOTGUN USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>5x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 7 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/logo2.jpg" alt="CODE-X">
+                    <h3>ঔৣCODE~X</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>RUSHER: <strong>Get in first and break enemey defenses</strong></p>
+                      <p>Legendary BR Rank: <strong>11x</strong></p>
+                      <p>Legendary MP Rank: <strong>9x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 8 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="playercard">
+                    <img src="LOGO/clogo18.jpg" alt="clogo18">
+                    <h3>ঔৣ.LittleMiss</h3>
+                    <p id="rolecolor"><strong>SMG USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>ANCHOR: <strong>Maintaining control and providing cover</strong></p>
+                      <p>Legendary BR Rank: <strong>0</strong></p>
+                      <p>Legendary MP Rank: <strong>4x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 5 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo25.jpg" alt="clogo25">
+                    <h3>ঔৣTOXIÇ</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • SHOTGUN USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>FLEX PLAYER: <strong>Fill in any role as needed, the utility player</strong></p>
+                      <p>Legendary BR Rank: <strong>7x</strong></p>
+                      <p>Legendary MP Rank: <strong>5x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>3 Mythic • 9 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo13.jpg" alt="clogo13">
+                    <h3>ঔৣKING-GE-TE</h3>
+                    <p id="rolecolor"><strong>SMG • AR • SHOTGUN USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>FLEX PLAYER: <strong>Fill in any role as needed, the utility player</strong></p>
+                      <p>Legendary BR Rank: <strong>2x</strong></p>
+                      <p>Legendary MP Rank: <strong>3x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 6 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo1.jpg" alt="clogo1">
+                    <h3>ঔৣplastic</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>LONG RANGE SLAYER: <strong>Dominate sightlines and Shutdown pushers</strong></p>
+                      <p>Legendary BR Rank: <strong>10x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>3 Mythic • 13 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="playercard">
+                    <img src="LOGO/clogo2.jpg" alt="clogo2">
+                    <h3>ঔৣ.president'</h3>
+                    <p id="rolecolor"><strong>SMG • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>FLEX PLAYER: <strong>Fill in any role as needed, the utility player</strong></p>
+                      <p>Legendary BR Rank: <strong>2x</strong></p>
+                      <p>Legendary MP Rank: <strong>5x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 7 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo5.jpg" alt="clogo5">
+                    <h3>ঔৣEvermoney</h3>
+                    <p id="rolecolor"><strong>SMG • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>16x</strong></p>
+                      <p>Legendary MP Rank: <strong>7x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>24 Mythic • 59 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo21.jpg" alt="clogo21">
+                    <h3>ঔৣBabacultur</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>LONG RANGE SLAYER: <strong>Dominate sightlines and Shutdown pushes</strong></p>
+                      <p>Legendary BR Rank: <strong>0</strong></p>
+                      <p>Legendary MP Rank: <strong>3x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 5 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo9.jpg" alt="clogo9">
+                    <h3>ঔৣDe-Killer</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>LONG RANGE SLAYER: <strong>Dominate sightlines and Shutdown pushes</strong></p>
+                      <p>Legendary BR Rank: <strong>3x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 6 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="playercard">
+                    <img src="LOGO/clogo6.jpg" alt="clogo6">
+                    <h3>ঔৣ.Bigdream</h3>
+                    <p id="rolecolor"><strong>SMG • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>FLEX PLAYER: <strong>Fill in any role as needed, the utility player</strong></p>
+                      <p>Legendary BR Rank: <strong>15x</strong></p>
+                      <p>Legendary MP Rank: <strong>5x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>37 Mythic • 96 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo7.jpg" alt="clogo7">
+                    <h3>ঔৣGRÆT-ICØN</h3>
+                    <p id="rolecolor"><strong>SMG • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>8x</strong></p>
+                      <p>Legendary MP Rank: <strong>3x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 8 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo8.jpg" alt="clogo8">
+                    <h3>ঔৣBŁÅQBØŤ</h3>
+                    <p id="rolecolor"><strong>SMG • SHOTGUN • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>RUSHER: <strong>Get in first and break enemey defenses</strong></p>
+                      <p>Legendary BR Rank: <strong>10x</strong></p>
+                      <p>Legendary MP Rank: <strong>0</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 6 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo11.jpg" alt="clogo11">
+                    <h3>ঔৣofficial</h3>
+                    <p id="rolecolor"><strong>SMG USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>6x</strong></p>
+                      <p>Legendary MP Rank: <strong>2x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>4 Mythic • 8 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+
+                  <div class="playercard">
+                    <img src="LOGO/clogo12.jpg" alt="clogo12">
+                    <h3>ঔৣ.TheREAPER</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>SLAYER: <strong>Getting kills and applying map pressure</strong></p>
+                      <p>Legendary BR Rank: <strong>7x</strong></p>
+                      <p>Legendary MP Rank: <strong>6x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 8 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo14.jpg" alt="clogo14">
+                    <h3>ঔৣcypher459</h3>
+                    <p id="rolecolor"><strong>SMG • SNIPER • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>RUSHER: <strong>Get in first and break enemey defenses</strong></p>
+                      <p>Legendary BR Rank: <strong>6x</strong></p>
+                      <p>Legendary MP Rank: <strong>9x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>4 Mythic • 6 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo16.jpg" alt="clogo16">
+                    <h3>ঔৣĆMď</h3>
+                    <p id="rolecolor"><strong>SMG • SHOTGUN • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>FLEX PLAYER: <strong>Fill in any role as needed, the utility player</strong></p>
+                      <p>Legendary BR Rank: <strong>10x</strong></p>
+                      <p>Legendary MP Rank: <strong>8x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>2 Mythic • 14 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                  <div class="playercard">
+                    <img src="LOGO/clogo4.jpg" alt="clogo4">
+                    <h3>ঔৣMamma۶ৎ</h3>
+                    <p id="rolecolor"><strong>SMG • LMG • AR USER</strong></p>
+                    <div class="stats">
+                      <h4>Player Stats</h4>
+                      <p>ANCHOR: <strong>Maintaining control and providing cover</strong></p>
+                      <p>Legendary BR Rank: <strong>2x</strong></p>
+                      <p>Legendary MP Rank: <strong>5x</strong></p>
+                      <p>Completionist: <strong>14 Gold • 4 Diamond Camo</strong></p>
+                      <p>Weapons: <strong>1 Mythic • 3 Legendary Guns</strong></p>
+                    </div>
+                  </div>
+            
+                </div>
+              </section>
+
+              <footer class="down">
+                <p>&copy; 2025 <span>PHOENIX DAWN CLAN</span>. All rights reserved.</p>
+            </footer>
+    
+            </body>
+            </html>
